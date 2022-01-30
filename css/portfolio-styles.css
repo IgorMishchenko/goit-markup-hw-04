@@ -12,11 +12,17 @@
  
 
 /*--------------------HEADER--------------------*/
+
+.header{
+    border-bottom: 2px solid #2196F3;
+  }
+
 .container-header{
     padding-top: 24px;
     padding-bottom: 24px;
     display: flex;
     align-items: center;
+   
 
 }
 /*Logo*/
@@ -143,6 +149,7 @@ body {
     outline: 2px solid #2196F3;
     margin: 0 auto;
     box-sizing: border-box;
+    
 }
 
 /*Disable list for "ul"****/
@@ -201,12 +208,13 @@ margin: 0 auto;
     text-align: center;
     letter-spacing: 0.06em;
     color: #212121;
-    background: #757575;
+    background: #F5F4FA;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 padding: 6px 22px;
 display: block;
 margin: 0 auto;
+
 
 }
 
@@ -248,13 +256,18 @@ margin-left: 8px;
 .our-projects-list{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 50px;
     margin-left: -30px;
+    padding-left: 15px;
+    margin-bottom: -30px;
+
 }
 
 .our-projects-item{
     width: calc(100% / 3 - 30px);
 margin-left: 30px;
-margin-bottom: 30px;
+margin-bottom: 15px;
+
 }
 
 
@@ -285,10 +298,11 @@ margin-bottom: 30px;
 
 
 .projects-text-container{
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
     outline: 2px solid #2196F3;
-    margin-bottom: 10px;
 }
 
 
@@ -367,7 +381,58 @@ margin-bottom: 30px;
         background: #2F303A;
 }
 
-.container-nav-foter{
+.container-nav-footer-list{
     padding-top: 20px;
       
+}
+
+.container-nav-footer-item{
+    margin-top: 9px;
+}
+
+
+/*Scial media*/
+.footer-social-media {
+    margin-top: -60px;
+    padding-left: 250px;
+}
+
+.footer-social-media-title{
+
+ 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.footer-social-media-list{
+    display: flex;
+}
+
+.footer-social-media-item + .footer-social-media-item{
+    margin-left: 10px;
+}
+
+.footer-social-media-link{
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color: #ffffff; 
+  
+}
+
+.footer-social-media-link-icon{
+    fill: currentColor;
+
+
 }
