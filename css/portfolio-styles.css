@@ -18,11 +18,13 @@
   }
 
 .container-header{
+ 
     padding-top: 24px;
     padding-bottom: 24px;
     display: flex;
     align-items: center;
-   
+    margin: 0 auto;
+    
 
 }
 /*Logo*/
@@ -146,7 +148,7 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid #2196F3;
+   
     margin: 0 auto;
     box-sizing: border-box;
     
@@ -267,9 +269,14 @@ margin-left: 8px;
     width: calc(100% / 3 - 30px);
 margin-left: 30px;
 margin-bottom: 15px;
+ 
 
 }
 
+
+.our-projects-item:focus, .our-projects-item:hover{
+    outline: 3px solid #2196F3;
+}
 
 
 .projects-text-h3 {
@@ -302,10 +309,8 @@ margin-bottom: 15px;
     padding-left: 24px;
     padding-right: 24px;
     padding-bottom: 20px;
-    outline: 2px solid #2196F3;
+/*    outline: 2px solid #2196F3;*/
 }
-
-
 
 /*----------------->FOOTER<----------------------*/
 .footer-logo-web {
@@ -381,20 +386,15 @@ margin-bottom: 15px;
         background: #2F303A;
 }
 
-.container-nav-footer-list{
+.container-nav-foter{
     padding-top: 20px;
       
 }
 
-.container-nav-footer-item{
-    margin-top: 9px;
-}
-
-
 /*Scial media*/
 .footer-social-media {
-    margin-top: -60px;
-    padding-left: 250px;
+    margin-top: -70px;
+    padding-left: 300px;
 }
 
 .footer-social-media-title{
@@ -431,8 +431,19 @@ margin-bottom: 15px;
   
 }
 
+.footer-social-media-link-active{
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color: #ffffff; 
+    background-color: #2196F3;
+  
+}
+
 .footer-social-media-link-icon{
     fill: currentColor;
-
-
 }
