@@ -134,13 +134,12 @@ color: #757575;
     margin-left: 8px;
 }
 
-.header-contact-icon {
- 
-    color: #ffffff;
-}
-.header-contact-icon:hover{
-    background-color:yellowgreen;
-}
+.header-contact-icon:hover {
+           
+    fill:#2196F3;
+
+} 
+
 
 /*----------------->BODY<----------------------*/
 p, h1, h2, h3, h4, h5, h6 { 
@@ -499,7 +498,7 @@ margin: 0 auto;
     width: 170px;
     height: 92px;
     color:  #2196F3;
-    outline: 6px solid #2196F3;
+    outline: 2px solid #2196F3;
 }
 .partners-link-icon:hover {
            
