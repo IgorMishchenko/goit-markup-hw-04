@@ -118,27 +118,21 @@ color: #757575;
     text-decoration: none;
 }
 
-
-.header-contact-link-mail:hover, .header-contact-link-tel:hover {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: var(--main-text-blue-color);
-}
-
 .header-contact-icon{
     margin-left: 15px;
    }
 
-.header-contact-icon:hover,.header-contact-icon:focus {
+   
+.header-contact-item:hover, .header-contact-item:focus{
            
-    fill:#2196F3;
+    fill:#2196F3; 
+    color:  #2196F3;
+  
 
-} 
+}
+
+
+
 
 
 /*----------------->BODY<----------------------*/
@@ -195,10 +189,18 @@ margin-top: 50px;
 /*hero*/
 .hero-main{
 
+    background-color: #2F303A;
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)
+      ),
+      url(../images/hero_bg.jpg);
+
+    
+
     padding-top: 200px;
     padding-bottom: 200px;
-    background: #2F303A;
- background-image: url(../images/hero_bg.jpg);
+ 
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
@@ -335,7 +337,7 @@ margin-top: 50px;
 
 /**our-team**/
 
-/*our-team*/
+ 
 
 .our-team{
 
@@ -343,7 +345,7 @@ margin-top: 50px;
     padding-bottom: 94px;
     padding-top: 94px;
       background: #F5F4FA;
-  
+     
   }
   .our-team-title{
       font-family: Roboto;
@@ -356,17 +358,28 @@ margin-top: 50px;
       text-align: center;
       margin-bottom: 50px;
     
+    }
   
-  
-  }
-  
+
+    
   .our-team-list {
       display: flex;
+      
       }
   
   .our-team-item +.our-team-item{
       margin-left: 30px;
   }
+
+.our-team-item{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
+
+
+
+
   .our-team-text-h3 {
       font-family: Roboto;
       font-style: normal;
@@ -403,6 +416,7 @@ margin-top: 50px;
       padding-top: 30px;
       padding-bottom: 30px;
     background:#FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   
   
@@ -411,18 +425,10 @@ margin-top: 50px;
   justify-content: center;
   }
   
-  .our-team-social-link-active{
-      width: 44px;
-      height: 44px;
-      background-color:#2196F3;
-      border-radius: 50%;
-      display: flex;
-      align-items:center;
-      justify-content: center;
-      color: #AFB1B8;
-  
-    
-  }
+ 
+  .our-team-item:focus, .our-team-item:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
   
   .our-team-social-link{
       width: 44px;
@@ -441,10 +447,7 @@ margin-top: 50px;
    
   }
   
-  .our-team-social-link-active:hover, .our-team-social-link-active:focus{
-    background-color: #2196F3;
-    color: #FFFFFF;
-  }
+ 
   .our-team-social-link:hover, .our-team-social-link:focus{
       background-color: #2196F3;
       color: #FFFFFF;
@@ -502,38 +505,30 @@ margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.partners-link-icon{
-    fill: #AFB1B8;
-}
 
-.partners-link-container{
+
+.partners-link{
  
     width: 170px;
     height: 92px;
     border-radius: 3%;
     outline: 2px solid #AFB1B8;
-}
-
-.partners-link-container:hover, .partners-link-icon:focus{
-
-    color:  #2196F3;
-    outline: 2px solid #2196F3;
+    fill: #AFB1B8;
 }
 
 
-.partners-link-icon:hover, .partners-link-icon:focus {
+
+
+.partners-link:hover, .partners-link:focus {
            
     fill:#2196F3;
+    color:  #2196F3;
+    outline: 4px solid #2196F3;
 
 } 
 
 
 
-.partners-link-icon:focus {
-    
-    outline: 6px solid tomato;
-    
-}
 
 
 
@@ -619,8 +614,9 @@ margin-top: 50px;
 
 /*Scial media*/
 .footer-social-media {
-    margin-top: -70px;
+    margin-top: -90px;
     padding-left: 300px;
+    align-items:baseline;           
 }
 
 .footer-social-media-title{
@@ -651,9 +647,6 @@ color: #FFFFFF;
     display: flex;
 }
 
-..footer-social-media-item{
-    
-}
 
 .footer-social-media-item + .footer-social-media-item{
     margin-left: 10px;
@@ -687,4 +680,12 @@ color: #FFFFFF;
 
 .footer-social-media-link-icon{
     fill: currentColor;
+}
+
+
+.footer-social-media-link:hover, .footer-social-media-link:hover{
+    fill:#2196F3;
+    color:  #FFFFFF;
+    outline: 2px solid #FFFFFF;
+    background-color: #2196F3;
 }
