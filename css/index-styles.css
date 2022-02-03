@@ -49,6 +49,11 @@
     color: #212121;
   
 }
+
+.header-logo-studio:hover,  .header-logo-studio:focus, .header-logo-web:hover, .header-logo-web:focus{
+    fill:#2196F3; 
+    color:  #2196F3;
+}
 /*Navigation*/
 
 .header-nav-list{
@@ -84,7 +89,17 @@ margin-left: 30px;
 
     color: #212121;
   }
-  
+
+.header-contact-item + .header-contact-item{
+    margin-left: 30px;
+}
+
+.header-nav-link:hover, .header-nav-link:focus{
+           
+    fill:#2196F3; 
+    color:  #2196F3;
+
+}
 /*Contact*/
 .header-contact-list{
     display: flex;
@@ -95,7 +110,7 @@ margin-left: 30px;
     margin-left: 30px;
 }
 
-.header-contact-link-tel{
+.header-contact-link{
     font-family: Roboto;
 font-style: normal;
 font-weight: 500;
@@ -107,23 +122,14 @@ color: #757575;
 
 }
 
-.header-contact-link-mail{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575;
-    text-decoration: none;
-}
+
 
 .header-contact-icon{
     margin-left: 15px;
    }
 
    
-.header-contact-item:hover, .header-contact-item:focus{
+.header-contact-link:hover, .header-contact-link:focus{
            
     fill:#2196F3; 
     color:  #2196F3;
@@ -612,7 +618,7 @@ margin-top: 50px;
       
 }
 
-/*Scial media*/
+/*Social media*/
 .footer-social-media {
     margin-top: -90px;
     padding-left: 300px;
@@ -683,8 +689,8 @@ color: #FFFFFF;
 }
 
 
-.footer-social-media-link:hover, .footer-social-media-link:hover{
-    fill:#2196F3;
+.footer-social-media-link-active:focus, .footer-social-media-link-active:hover, .footer-social-media-link:focus, .footer-social-media-link:hover{
+    fill: #ffffff;
     color:  #FFFFFF;
     outline: 2px solid #FFFFFF;
     background-color: #2196F3;
